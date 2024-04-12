@@ -1,2 +1,2 @@
 # LUCAS_2024_DS_SESI
-projetim né pai
+atividades intinerario Desenvolvimento de sistemas 2024
