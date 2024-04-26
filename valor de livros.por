@@ -1,3 +1,4 @@
+//EX3 Lucas Medeiros 26/04/2024
 programa {
   funcao inicio() {
     inteiro l
@@ -9,6 +10,6 @@ programa {
     }senao{
       vt-l*12
     }
-    escreva("\no valor a ser pago é de ",vt," reais\n")
+    escreva("\no valor a ser pago Ã© de ",vt," reais\n")
   }
 }
