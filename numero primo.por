@@ -9,7 +9,7 @@ programa {
     escreva("digite um numero: ")
     leia(x)
     se(x>0){
-      faca{
+      enquanto(val<=x){
         para(y;y<=x;y++){
         se(x%val==0){
           div++
@@ -20,7 +20,7 @@ programa {
         }senao{
           escreva("o numero digitado não é primo.\n")
         }
-      }enquanto(val<=x)
+      }
     }senao{
       escreva("Numero invalido\n")
     }
