@@ -15,13 +15,13 @@ programa
     faca{
         para(cont=0; cont<1; cont++)
         { limpa()
-          escreva("\n   SEJA BEM  VINDO AO APLICATIVO DE NAVEGAﾃ�ﾃグ DE VFR!   ")
-          escreva("\nSelecione a opﾃｧﾃ｣o que deseja:  ")
-          escreva("\n 1- CADASTRAR DADOS DE NAVEGAﾃ�ﾃグ \n 2- REALIZAR Cﾃ´CULOS DE Vﾃ念 AUTOMﾃゝICOS \n 3- EXIBIR SAﾃ好A DE DADOS \n 4- SAIR  ")
+          escreva("\n   SEJA BEM  VINDO AO APLICATIVO DE NAVEGAÇÃO DE VFR!   ")
+          escreva("\nSelecione a opção que deseja:  ")
+          escreva("\n 1- CADASTRAR DADOS DE NAVEGAÇÃO \n 2- REALIZAR CALCULOS DE VOO AUTOMATICOS \n 3- EXIBIR SAÌDA DE DADOS \n 4- SAIR  ")
           escreva("\n")
           leia(cas)
           se(cas>4 ou cas<1){
-          escreva("<<<<<<<<<<<<<<<Nﾃ哺ERO INVﾃ´IDO>>>>>>>>>>>>>>>>>\n")
+          escreva("<<<<<<<<<<<<<<<NÚMERO INVALIDO>>>>>>>>>>>>>>>>>\n")
           continuar()
           cont--
       }
@@ -31,10 +31,10 @@ programa
         faca{
         limpa()
         para(conta=0; conta<=0; conta++){
-        escreva("Digite o cﾃｳdigo do aerﾃｳdromo de origem: ")
+        escreva("Digite o código do aerodromo de origem: ")
         leia(aero1)
         se(txt.numero_caracteres(aero1)!=4){
-          escreva("<<<<<<<<<<<Cﾃ泥IGO INVﾃ´IDO>>>>>>>>>>\n")
+          escreva("<<<<<<<<<<<CÓDIGO INVALIDO>>>>>>>>>>\n")
           continuar()
           conta--
 
@@ -43,10 +43,10 @@ programa
         }
         limpa()
         para(con=0; con<=0; con++){
-        escreva("Digite o cﾃｳdigo do aerﾃｳdromo de destino: ")
+        escreva("Digite o código do aerodromo de destino: ")
         leia(aero2)
         se(txt.numero_caracteres(aero2)!=4){
-          escreva("<<<<<<<<<<<Cﾃ泥IGO INVﾃ´IDO>>>>>>>>>>\n")
+          escreva("<<<<<<<<<<<CÓDIGO INVALIDO>>>>>>>>>>\n")
           continuar()
           con--
         }
@@ -58,17 +58,17 @@ programa
         escreva("Digite a hora da decolagem (primeiros dois dﾃｭgitos de um relﾃｳgio): ")
         leia(hora)
         se(hora<0 ou hora>23){
-          escreva("<<<<<<<<<<<HORﾃヽIO INVALIDO>>>>>>>>>>\n")
+          escreva("<<<<<<<<<<<HORÁRIO INVALIDO>>>>>>>>>>\n")
           continuar()
           conta--
         }
         }
         limpa()
         para(aa=0; aa<=0; aa++){
-        escreva("Digite os minutos da decolagem (ﾃｺltimos dois dﾃｭgitos de um relﾃｳgio): ")
+        escreva("Digite os minutos da decolagem (Últimos dois dígitos de um relógio): ")
         leia(min)
         se(min<0 ou min>59){
-          escreva("<<<<<<<<<<<HORﾃヽIO INVALIDO>>>>>>>>>>\n")
+          escreva("<<<<<<<<<<<HORÁRIO INVALIDO>>>>>>>>>>\n")
           continuar()
           aa--
         }
@@ -76,7 +76,7 @@ programa
       }
         limpa()
         para(cc=0; cc<=0; cc++){
-        escreva("Digite o fuso horﾃ｡rio local : ")
+        escreva("Digite o fuso horário local : ")
         leia(fuso)
         se(fuso<-12 ou fuso>12){
           escreva("<<<<<<<<<<<FUSO INVALIDO>>>>>>>>>>\n")
@@ -87,7 +87,7 @@ programa
       }
         limpa()
         para(dd=0; dd<=0; dd++){
-        escreva("Digite o fuso horﾃ｡rio do destino: ")
+        escreva("Digite o fuso horário do destino: ")
         leia(fusc)
         se(fusc<-12 ou fusc>12){
           escreva("<<<<<<<<<<<FUSO INVALIDO>>>>>>>>>>\n")
@@ -99,10 +99,10 @@ programa
 
     limpa()
         para(ee=0; ee<=0; ee++){
-        escreva("Digite o nﾃｺmero de pontos de referﾃｪncia ao longo do trajeto: ")
+        escreva("Digite o número de pontos de referência ao longo do trajeto: ")
         leia(ref)
         se(ref<0){
-          escreva("<<<<<<<<<<<Nﾃ哺ERO INVALIDO>>>>>>>>>>\n")
+          escreva("<<<<<<<<<<<NÚMERO INVALIDO>>>>>>>>>>\n")
           continuar()
           ee--
         }
@@ -115,7 +115,7 @@ programa
       leia(consumo_por_hora)
       limpa()
       dadosins=verdadeiro
-      escreva("Deseja criar outra ficha de aviaﾃｧﾃ｣o, prima 1 para sim ou prima qualquer outro nﾃｺmero para nﾃ｣o: ")
+      escreva("Deseja criar outra ficha de aviação, prima 1 para sim ou prima qualquer outro número para não: ")
       leia(k)
         
     para(inteiro ii=0;ii<ref;ii++){
